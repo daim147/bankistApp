@@ -372,3 +372,7 @@ btnSort.addEventListener('click', e => {
   displayMovement(currentAccount, !sorted);
   sorted = !sorted;
 });
+
+alert("1: Username = Husnain Syed or hs, Pin = 1111 \n 2: Username = Arslan Syed or as, Pin = 2222 \n 3: Username = Mohsin Raza or mr, Pin = 3333 \n 4: Username = Ayaz Hassan or ah, Pin = 4444 \n 5: Username = Ibrahim Syed or is, Pin = 5555"
+
+)
