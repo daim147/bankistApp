@@ -58,7 +58,7 @@ const account3 = {
 
 const account4 = {
   owner: 'Ayaz Hassan',
-  movements: [430, 1000, 700, 50, 90],
+  movements: [430, 1000, 700, 50, 90, -888],
   interestRate: 1,
   pin: 4444,
   movementsDates: [
@@ -66,6 +66,7 @@ const account4 = {
     '2020-05-08T14:11:59.604Z',
     '2021-03-30T14:17:49.604Z',
     '2021-04-04T09:15:04.904Z',
+    '2021-04-04T10:19:21.185Z',
     '2021-04-05T10:19:21.185Z',
   ],
 };
@@ -75,11 +76,11 @@ const account5 = {
   interestRate: 1,
   pin: 5555,
   movementsDates: [
-    '2019-09-11T21:21:19.178Z',
-    '2019-10-11T07:12:73.383Z',
-    '2020-11-02T09:35:27.904Z',
-    '2020-04-02T10:48:33.185Z',
-    '2020-05-08T14:22:51.604Z',
+    '2019-10-18T21:31:17.178Z',
+    '2019-11-21T07:37:02.383Z',
+    '2020-01-22T10:25:36.790Z',
+    '2020-01-01T23:32:37.929Z',
+    '2020-02-17T17:01:37.194Z',
     '2021-03-30T14:17:49.604Z',
     '2021-04-04T09:15:04.904Z',
     '2021-04-05T10:19:21.185Z',
@@ -115,7 +116,7 @@ const inputTransferAmount = document.querySelector('.form__input--amount');
 const locale = navigator.language;
 
 // Date Format
-const dateFormat = date => {
+const dateFormat = (date) => {
   const calcDayPassed = (date1, date2) =>
     Math.round(Math.abs(date2 - date1) / (1000 * 60 * 60 * 24));
 
