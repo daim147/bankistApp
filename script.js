@@ -218,18 +218,18 @@ const calcPrintbalance = acc => {
 const calcSummary = acc => {
   const incomes = acc.movements
     .filter(mov => mov > 0)
-    .reduce((acc, mov) => acc + mov);
+    .reduce((acc, mov) => acc + mov, 0);
   labelSumIn.textContent = `${numberFormat(incomes)}`;
 
   const outcome = acc.movements
     .filter(mov => mov < 0)
-    .reduce((acc, mov) => acc + mov);
+    .reduce((acc, mov) => acc + mov, 0);
   labelSumOut.textContent = `${numberFormat(Math.abs(outcome))}`;
   const interest = acc.movements
     .filter(mov => mov > 0)
     .map(deposite => (deposite * acc.interestRate) / 100)
     .filter(interest => interest >= 1)
-    .reduce((acc, interest) => acc + interest);
+    .reduce((acc, interest) => acc + interest, 0);
 
   labelSumInterest.textContent = `${numberFormat(interest)}`;
 };
