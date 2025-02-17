@@ -1,2 +1,2 @@
 # bankistApp
-# <a href = "https://daimsyed.github.io/bankistApp/"> Live Demo </a>
+# <a href = "https://daim147.github.io/bankistApp/"> Live Demo </a>
